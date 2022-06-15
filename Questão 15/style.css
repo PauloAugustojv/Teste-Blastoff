@@ -1,0 +1,61 @@
+.container{
+    display: grid; 
+    gap: 50px;
+    grid-template-areas: 'A A A'
+                         'B B E'
+                         'C D E' 
+
+}
+
+.A{
+background:purple;
+grid-area: A;
+height: 200px; 
+
+
+}
+.E{
+    background:blue;
+    grid-area: E;
+
+      
+}
+.C{
+    background:palegreen;
+    grid-area:C;
+    height: 300px;
+   
+
+}
+.D{
+    background: red;
+    grid-area:D;
+    height: 300px;
+       
+}
+.B{
+    background: yellow;
+    grid-area: B;
+    height: 300px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .container{
+        display: grid; 
+        grid-template-areas:'A A'
+                            'B B'
+                            'C D '
+                            'E E'
+    }
+    .E{
+        height: 300px;
+
+                                              
+    }
+    .B{
+        height: 400px;
+    }
+
+    
+}

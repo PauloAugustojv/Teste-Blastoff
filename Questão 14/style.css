@@ -1,0 +1,41 @@
+.container{
+    padding: 15px;
+    display: grid; 
+    grid-template-areas: 'header header header'
+                         'menus main direita'
+                         'menus footer footer' 
+
+
+}
+
+.header{
+background:purple;
+grid-area: header;
+height: 100px; 
+
+
+}
+.menus{
+    background:blue;
+    grid-area: menus;
+
+      
+}
+.main{
+    background:palegreen;
+    grid-area:main;
+    height: 300px;
+   
+
+}
+.direita{
+    background: red;
+    grid-area:direita;
+    height: 300px;
+       
+}
+.footer{
+    background: yellow;
+    grid-area: footer;
+    height: 300px;
+}
